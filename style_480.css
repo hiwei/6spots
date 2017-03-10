@@ -1,0 +1,178 @@
+.content > span {
+	position: absolute;
+	display: block;
+	font-family: Courier;
+	font-size: 40pt;
+	color: #eceff3;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 5%;
+}
+.content > span::after {
+	display: none;
+}
+.about_block {
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	position: absolute;
+	background: #eceff3;
+	left: -100%;
+	transition: left .7s;
+	transform: translateZ(0);
+}
+.about_content {
+	width: 90%;
+	position: absolute;
+	display: block;
+	color: #000;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.about_content > span {
+	font-size: 12pt;
+	width: 90%;
+	height: 60%;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.about_content img {
+	display: none;
+}
+.about_x  {
+	right: 2vw! important;
+	top: 2vw! important;
+}
+.inside {
+	display: block;
+	z-index: 1;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 15%;
+	height: 2%;
+	transition: all 1s .4s, background .5s 0s;
+	transform: translateZ(0);
+}
+.inside1 {
+	background: #BE3C50;
+	top: 30%;
+}
+.inside1:hover {
+	cursor: pointer;
+	background-color:#A02338;
+}
+.title1 {
+	background: #BE3C50;
+}
+.inside2 {
+	background: #5AC8C3;
+	top: 42%;
+}
+.inside2:hover{
+	cursor: pointer;
+	background-color:#3C9EAF;
+}
+.title2 {
+	background: #5AC8C3;
+}
+.inside3 {
+	background: #FAE182;
+	top: 54%;
+}
+.inside3:hover {
+	cursor: pointer;
+	background-color:#FCB96E;
+}
+.title3 {
+	background: #FAE182;
+}
+.inside4 {
+	background: #036EB8;
+	top: 66%;
+}
+.inside4:hover {
+	cursor: pointer;
+	background-color:#00559B;
+}
+.title4 {
+	background: #036EB8;
+}
+.inside5 {
+	background: #FA9B7D;
+	top: 78%;
+}
+.inside5:hover {
+	cursor: pointer;
+	background-color:#EE7D73;
+}
+.title5 {
+	background: #FA9B7D;
+}
+.inside6 {
+	background: #419173;
+	top: 90%;
+}
+.inside6:hover {
+	cursor: pointer;
+	background-color:#006446;
+}
+.content {
+	width: 80%;
+	height: 90%;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.title6 {
+	background: #419173;
+}
+.spot_title {
+	width: 100%;
+	height: 12%; 
+	position: absolute;
+	text-align: center;
+}
+.spot_title span{
+	position: absolute;
+	font-family: Nunito;
+	font-size: 15pt;
+	color: #fff;
+	height: 15pt;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.spot_content {
+	position: absolute;
+	top: 12%;
+	left: 0;
+	padding: 3%;
+	font-size: 8pt;
+}
+.spot_content img {
+	width: 100%;
+	padding-bottom: 5%;
+}
+.spot_content_column {
+	column-count: 1;
+}
+

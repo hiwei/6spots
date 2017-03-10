@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Hind');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: Quicksand;
+	font-size: 14pt;
+	overflow: hidden;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+	background: url('img.png') no-repeat;
+	background-size: cover;
+	filter: blur(0px);
+    transition: filter 1.5s;
+}
+.video_blur {
+    filter: blur(10px);
+	-webkit-transition: filter 1.5s;
+    transition: filter 1.5s;
+}
+
+.add {
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transition-delay: 0s;
+	transform: translateZ(0);
+}
+.add:hover {
+	cursor: default;
+	background: #fff;
+}
+.about, .spot-1, .spot-2, .spot-3, .spot-4, .spot-5, .spot-6 {
+	display: none;
+}
+.spot_add {}
+
+.x {
+	background: none;
+	height: 25px;
+	width: 50px;
+	padding-top: 25px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 3%;
+	z-index: 99;
+}
+.about_x  {
+	background: none;
+	height: 25px;
+	width: 50px;
+	padding-top: 25px;
+	position: absolute;
+	top: 15%;
+	right: 10%;
+	z-index: 99;
+}
+.x:hover, .about_x:hover {
+	cursor: pointer;
+}
+
+.x :nth-child(1), .x :nth-child(2), .about_x :nth-child(1), .about_x :nth-child(2) {
+	height: 3px;
+	width: 50px;
+	border-radius: 10px;
+	background: #000;
+	margin-top: 0px;
+	transition: all 0.5s;
+}
+.x :nth-child(1), .about_x :nth-child(1) {
+	transform: rotate(45deg);
+}
+.x :nth-child(2), .about_x :nth-child(2){
+	transform: rotate(-45deg);
+	margin-top: -3px;
+}
+.x:hover.x :nth-child(1), .x:hover.x :nth-child(2), .about_x:hover :nth-child(1), .about_x:hover :nth-child(2) {
+	background: #fff;
+}
+
+.content > span:hover {
+	cursor: pointer;
+}
+.content > span:hover::after {
+	width: 100%;
+}
+@media screen and (min-width: 1441px) and (max-width: 1680px) {
+	.spot_content {
+		font-size: 13pt;
+	}
+
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+	.x {
+		right: 2%;
+	}
+	.x :nth-child(1), .about_x :nth-child(1) {
+		height: 3px;
+		width: 35px;
+		transform: rotate(45deg);
+	}
+	.x :nth-child(2), .about_x :nth-child(2){
+		height: 3px;
+		width: 35px;
+		transform: rotate(-45deg);
+		margin-top: -3px;
+	}
+	.spot_title span {
+		font-size: 25pt;
+	}
+	.spot_content {
+		font-size: 12pt;
+	}
+	.about_content > span {
+		font-size: 14pt;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 1280px) {
+	.spot_content {
+		font-size: 11pt;
+	}
+	.about_content { 
+		width: 70%;
+	}
+	.about_content > span {
+		font-size: 12pt;
+	}
+}
