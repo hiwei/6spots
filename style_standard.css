@@ -1,3 +1,81 @@
+.inside {
+	display: block;
+	z-index: 1;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 4%;
+	height: 2%;
+	transition: all 1s .4s, background .5s 0s;
+	transform: translateZ(0);
+}
+.inside1 {
+	background: #BE3C50;
+	left: 41%;
+}
+.inside1:hover {
+	cursor: pointer;
+	background-color:#A02338;
+}
+.title1 {
+	background: #BE3C50;
+}
+.inside2 {
+	background: #5AC8C3;
+	left: 52%;
+}
+.inside2:hover{
+	cursor: pointer;
+	background-color:#3C9EAF;
+}
+.title2 {
+	background: #5AC8C3;
+}
+.inside3 {
+	background: #FAE182;
+	left: 63%;
+}
+.inside3:hover {
+	cursor: pointer;
+	background-color:#FCB96E;
+}
+.title3 {
+	background: #FAE182;
+}
+.inside4 {
+	background: #036EB8;
+	left: 74%;	
+}
+.inside4:hover {
+	cursor: pointer;
+	background-color:#00559B;
+}
+.title4 {
+	background: #036EB8;
+}
+.inside5 {
+	background: #FA9B7D;
+	left: 85%;	
+}
+.inside5:hover {
+	cursor: pointer;
+	background-color:#EE7D73;
+}
+.title5 {
+	background: #FA9B7D;
+}
+.inside6 {
+	background: #419173;
+	left: 96%;	
+}
+.inside6:hover {
+	cursor: pointer;
+	background-color:#006446;
+}
+.title6 {
+	background: #419173;
+}
 .content > span {
 	position: absolute;
 	display: block;
@@ -109,81 +187,36 @@
 	transition-delay: 0s;
 	transform: translateZ(0);
 }
-.inside {
-	display: block;
-	z-index: 1;
+.x {
+	background: none;
+	height: 25px;
+	width: 50px;
+	padding-top: 25px;
 	position: absolute;
 	margin: auto;
 	top: 0;
 	bottom: 0;
-	width: 4%;
-	height: 2%;
-	transition: all 1s .4s, background .5s 0s;
-	transform: translateZ(0);
+	right: 3%;
+	z-index: 99;
 }
-.inside1 {
-	background: #BE3C50;
-	left: 41%;
-}
-.inside1:hover {
+.x:hover, .about_x:hover {
 	cursor: pointer;
-	background-color:#A02338;
 }
-.title1 {
-	background: #BE3C50;
+.x :nth-child(1), .x :nth-child(2), .about_x :nth-child(1), .about_x :nth-child(2) {
+	height: 3px;
+	width: 50px;
+	border-radius: 10px;
+	background: #000;
+	margin-top: 0px;
+	transition: all 0.5s;
 }
-.inside2 {
-	background: #5AC8C3;
-	left: 52%;
+.x :nth-child(1), .about_x :nth-child(1) {
+	transform: rotate(45deg);
 }
-.inside2:hover{
-	cursor: pointer;
-	background-color:#3C9EAF;
+.x :nth-child(2), .about_x :nth-child(2){
+	transform: rotate(-45deg);
+	margin-top: -3px;
 }
-.title2 {
-	background: #5AC8C3;
-}
-.inside3 {
-	background: #FAE182;
-	left: 63%;
-}
-.inside3:hover {
-	cursor: pointer;
-	background-color:#FCB96E;
-}
-.title3 {
-	background: #FAE182;
-}
-.inside4 {
-	background: #036EB8;
-	left: 74%;	
-}
-.inside4:hover {
-	cursor: pointer;
-	background-color:#00559B;
-}
-.title4 {
-	background: #036EB8;
-}
-.inside5 {
-	background: #FA9B7D;
-	left: 85%;	
-}
-.inside5:hover {
-	cursor: pointer;
-	background-color:#EE7D73;
-}
-.title5 {
-	background: #FA9B7D;
-}
-.inside6 {
-	background: #419173;
-	left: 96%;	
-}
-.inside6:hover {
-	cursor: pointer;
-	background-color:#006446;
-}
-.title6 {
-	background: #419173;
+.x:hover.x :nth-child(1), .x:hover.x :nth-child(2), .about_x:hover :nth-child(1), .about_x:hover :nth-child(2) {
+	background: #fff;
 }
