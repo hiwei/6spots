@@ -99,6 +99,16 @@
 	top: 0;
 	bottom: 0;
 }
+.add {
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transition-delay: 0s;
+	transform: translateZ(0);
+}
 .inside {
 	display: block;
 	z-index: 1;
