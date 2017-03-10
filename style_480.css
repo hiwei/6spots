@@ -173,19 +173,19 @@
 }
 .x {
 	background: none;
-	height: 11px;
-	width: 22px;
-	padding-top: 11px;
+	height: 15px;
+	width: 30px;
+	padding-top: 15px;
 	position: absolute;
 	margin: auto;
 	top: 0;
 	bottom: 0;
-	right: 2%;
+	right: 3%;
 	z-index: 99;
 }
 .about_x {
-	right: 3vw! important;
-	top: 3vw! important;
+	right: 5vw! important;
+	top: 5vw! important;
 }
 .x:hover, .about_x:hover {
 	cursor: pointer;
@@ -199,9 +199,9 @@
 	transition: all 0.5s;
 }
 .x :nth-child(1), .x :nth-child(2) {
-	height: 2px;
-	width: 22px;
-	border-radius: 5px;
+	height: 3px;
+	width: 40px;
+	border-radius: 10px;
 	background: #000;
 	margin-top: 0px;
 	transition: all 0.5s;
