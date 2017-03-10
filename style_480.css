@@ -182,10 +182,11 @@
 	bottom: 0;
 	right: 3%;
 	z-index: 99;
+	display: none;
 }
 .about_x {
-	right: 5vw! important;
-	top: 5vw! important;
+	right: 8vw! important;
+	top: 8vw! important;
 }
 .x:hover, .about_x:hover {
 	cursor: pointer;
