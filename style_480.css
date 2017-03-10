@@ -166,7 +166,7 @@
 	top: 12%;
 	left: 0;
 	padding: 3%;
-	font-size: 8pt;
+	font-size: 10pt;
 }
 .spot_content img {
 	width: 100%;
@@ -175,7 +175,6 @@
 .spot_content_column {
 	column-count: 1;
 }
-
 .add {
 	z-index: 10;
 	top: 0;
