@@ -49,10 +49,6 @@
 .about_content img {
 	display: none;
 }
-.about_x  {
-	right: 2vw! important;
-	top: 2vw! important;
-}
 .inside {
 	display: block;
 	z-index: 1;
@@ -128,8 +124,11 @@
 	cursor: pointer;
 	background-color:#006446;
 }
+.title6 {
+	background: #419173;
+}
 .content {
-	width: 90%;
+	width: 85%;
 	height: 90%;
 	background: none;
 	position: absolute;
@@ -139,9 +138,6 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
-}
-.title6 {
-	background: #419173;
 }
 .spot_title {
 	width: 100%;
@@ -154,7 +150,7 @@
 	font-family: Nunito;
 	font-size: 14pt;
 	color: #fff;
-	height: 14pt;
+	height: 20pt;
 	margin: auto;
 	top: 0;
 	bottom: 0;
@@ -185,4 +181,53 @@
 	background: #fff;
 	transition-delay: 0s;
 	transform: translateZ(0);
+}
+.x {
+	background: none;
+	height: 10px;
+	width: 20px;
+	padding-top: 10px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	right: 2%;
+	z-index: 99;
+}
+.about_x {
+	right: 3vw! important;
+	top: 3vw! important;
+}
+.x:hover, .about_x:hover {
+	cursor: pointer;
+}
+.about_x :nth-child(1), .about_x :nth-child(2) {
+	height: 3px;
+	width: 40px;
+	border-radius: 10px;
+	background: #000;
+	margin-top: 0px;
+	transition: all 0.5s;
+}
+.x :nth-child(1), .x :nth-child(2) {
+	height: 2px;
+	width: 20px;
+	border-radius: 10px;
+	background: #000;
+	margin-top: 0px;
+	transition: all 0.5s;
+}
+.x :nth-child(1), .about_x :nth-child(1) {
+	transform: rotate(45deg);
+}
+.x :nth-child(2), .about_x :nth-child(2){
+	transform: rotate(-45deg);
+	margin-top: -3px;
+}
+.x :nth-child(2) {
+	margin-top: -3.5px;
+	margin-left: 1px;
+}
+.x:hover.x :nth-child(1), .x:hover.x :nth-child(2), .about_x:hover :nth-child(1), .about_x:hover :nth-child(2) {
+	background: #fff;
 }
