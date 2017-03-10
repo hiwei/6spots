@@ -129,7 +129,7 @@
 	background-color:#006446;
 }
 .content {
-	width: 80%;
+	width: 90%;
 	height: 90%;
 	background: none;
 	position: absolute;
@@ -152,9 +152,9 @@
 .spot_title span{
 	position: absolute;
 	font-family: Nunito;
-	font-size: 15pt;
+	font-size: 14pt;
 	color: #fff;
-	height: 15pt;
+	height: 14pt;
 	margin: auto;
 	top: 0;
 	bottom: 0;
@@ -165,7 +165,7 @@
 	position: absolute;
 	top: 12%;
 	left: 0;
-	padding: 3%;
+	padding: 5%;
 	font-size: 10pt;
 }
 .spot_content img {
