@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Hind');
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
 body {
 	width: 100%;
 	height: 100%;
@@ -24,13 +32,6 @@ video {
     transform: translateX(-50%) translateY(-50%);
 	background: url('img.png') no-repeat;
 	background-size: cover;
-	filter: blur(0px);
-    transition: filter 1.5s;
-}
-.video_blur {
-    filter: blur(10px);
-	-webkit-transition: filter 1.5s;
-    transition: filter 1.5s;
 }
 .add:hover {
 	cursor: default;
