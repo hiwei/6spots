@@ -9,6 +9,13 @@
 
 <script src="jquery.min.js"></script>
 <script>
+$(window).on('orientationchange', function(e) {
+     $.mobile.changePage(window.location.href, {
+        allowSamePageTransition: true,
+        transition: 'none',
+        reloadPage: true
+    });
+});
 $(document).ready(function(){
 	$('.inside1, .inside2, .inside3, .inside4, .inside5, .inside6').click( function() {
 		$(this).toggleClass('add');
