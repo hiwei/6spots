@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Hind');
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@media (orientation: portrait) {
+@media (orientation: landscape) {
   body {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
